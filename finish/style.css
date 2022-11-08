@@ -36,4 +36,40 @@ h1 {
   opacity: 0.75;
 }
 
-/* prprietà grid */
+/* prprietà grid  */
+
+.contenitore {
+  padding: 1em;
+  display: grid;
+  /* repeat il numero di colonne per la grandezza */
+ /* grid-template-columns: repeat(4, 1fr); */
+ grid-template-columns:  repeat(auto-fit, minmax(350px,1fr));
+  /*grid-template-rows: 300px 1fr 1fr; */
+ /*  grid-template: row / column; */
+/*  grid-template:150px 1fr 1fr /  1fr 1fr 1fr 1fr ; */
+  gap: 20px;
+
+
+}
+.cont-flex{
+  justify-content: center;
+  display: flex;
+}
+.cont-flex p{
+  padding: 10px;
+  border: 1px solid rebeccapurple;
+  
+}
+
+.elemento {
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  color: #004e92;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1.4;
+
+}
