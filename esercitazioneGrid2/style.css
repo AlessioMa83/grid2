@@ -7,7 +7,7 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 html {
@@ -40,7 +40,9 @@ h1 {
 
 .contenitore {
   padding: 1em;
- 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-flow: dense;
 }
 
 .elemento {
@@ -53,4 +55,41 @@ h1 {
   font-style: italic;
   font-size: 1.2em;
   line-height: 1.4;
+}
+
+.elm1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / 3;
+}
+
+
+
+
+/*  .foto{
+    overflow: hidden;
+    background: linear-gradient(38deg, #000428);
+    border-radius: 10px;
+    display: block;
+    opacity: 0.6;
+     filter: grayscale(100%); 
+    height: 100%;
+    object-fit: cover;
+    object-fit: center top;
+}  */
+
+.foto {
+  overflow: hidden;
+  background: linear-gradient(38deg, #000428);
+  border-radius: 10px;
+  display: block;
+
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.elm2 .foto {
+  object-position: left;
+  opacity: 0.6;
+  filter: grayscale(100%);
 }
